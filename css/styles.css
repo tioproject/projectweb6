@@ -1,0 +1,23 @@
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(56, 189, 248, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(129, 140, 248, 0.04) 1px, transparent 1px);
+}
+
+.roadmap-tab {
+  background-color: #101520;
+  border-color: #2D3A52;
+  color: #CBD5E1;
+}
+
+.roadmap-tab:hover {
+  border-color: #38BDF8;
+  color: #F8FAFC;
+}
+
+.roadmap-tab.active {
+  background-color: #38BDF8;
+  border-color: #38BDF8;
+  color: #080A0F;
+}

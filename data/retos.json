@@ -1,0 +1,202 @@
+[
+  {
+    "tag": "FÍSICA • CINEMÁTICA",
+    "question": "Un móvil viaja de Lima a Chosica a $40\\text{ km/h}$ y regresa por la misma ruta a $60\\text{ km/h}$. ¿Cuál fue su rapidez media en todo el viaje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$50\\text{ km/h}$ (el promedio simple)"
+      },
+      {
+        "id": "B",
+        "text": "$48\\text{ km/h}$ (media armónica)"
+      },
+      {
+        "id": "C",
+        "text": "$0\\text{ km/h}$ (porque volvió al inicio)"
+      }
+    ],
+    "correct": "B",
+    "explanation": "La rapidez media es $\\frac{\\text{distancia total}}{\\text{tiempo total}} = \\frac{2d}{\\frac{d}{40} + \\frac{d}{60}} = \\frac{2(40)(60)}{40+60} = 48\\text{ km/h}$. La opción C corresponde a la velocidad media vectorial, no a la rapidez media."
+  },
+  {
+    "tag": "ÁLGEBRA • ECUACIONES",
+    "question": "¿Cuántas soluciones reales tiene la ecuación $\\sqrt{x - 2} = -3$?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Una solución: $x = 11$"
+      },
+      {
+        "id": "B",
+        "text": "Ninguna solución ($\\text{CS} = \\emptyset$)"
+      },
+      {
+        "id": "C",
+        "text": "Dos soluciones: $x = 11$ y $x = -7$"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Si elevas al cuadrado sin analizar el universo, obtienes $x - 2 = 9 \\Rightarrow x = 11$. Pero la raíz cuadrada principal $\\sqrt{\\cdot}$ en los reales siempre devuelve un valor $\\ge 0$, jamás $-3$. Por tanto, no tiene solución."
+  },
+  {
+    "tag": "FÍSICA • HIDROSTÁTICA",
+    "question": "Un cubo de hielo flota en un vaso lleno de agua hasta el borde. Cuando el hielo se derrite por completo (a temperatura constante), ¿qué ocurre con el nivel del agua?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El agua se rebalsa del vaso"
+      },
+      {
+        "id": "B",
+        "text": "El nivel del agua baja ligeramente"
+      },
+      {
+        "id": "C",
+        "text": "El nivel del agua se mantiene exactamente igual"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Por el Principio de Arquímedes, el peso del hielo es igual al peso del agua desalojada por su parte sumergida. Al derretirse, el agua líquida formada ocupa exactamente el mismo volumen que estaba sumergido."
+  },
+  {
+    "tag": "ÁLGEBRA • VALOR ABSOLUTO",
+    "question": "Si $x < 0$, ¿a qué equivale la expresión $\\sqrt{x^2} + x$?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$2x$"
+      },
+      {
+        "id": "B",
+        "text": "$0$"
+      },
+      {
+        "id": "C",
+        "text": "$-2x$"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Por definición, $\\sqrt{x^2} = |x|$. Como $x < 0$, entonces $|x| = -x$. Al reemplazar: $-x + x = 0$. El error clásico es simplificar raíz con exponente sin valor absoluto."
+  },
+  {
+    "tag": "FÍSICA • DINÁMICA",
+    "question": "Un bloque de $5\\text{ kg}$ reposa sobre una mesa horizontal ($\\mu_s = 0.4$; $g = 10\\text{ m/s}^2$). Si le aplicas una fuerza horizontal de $12\\text{ N}$, ¿cuánto vale la fuerza de rozamiento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$20\\text{ N}$"
+      },
+      {
+        "id": "B",
+        "text": "$12\\text{ N}$"
+      },
+      {
+        "id": "C",
+        "text": "$8\\text{ N}$"
+      }
+    ],
+    "correct": "B",
+    "explanation": "El rozamiento estático máximo es $f_{s,\\text{máx}} = \\mu_s N = 0.4(50) = 20\\text{ N}$. Como $12\\text{ N} < 20\\text{ N}$, el bloque no se mueve y el rozamiento estático iguala exactamente a la fuerza aplicada: $12\\text{ N}$."
+  },
+  {
+    "tag": "TRIGONOMETRÍA • IDENTIDADES",
+    "question": "¿Cuál es el valor mínimo de la expresión $E = 3\\sin x + 4\\cos x$ para $x \\in \\mathbb{R}$?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$-7$"
+      },
+      {
+        "id": "B",
+        "text": "$-5$"
+      },
+      {
+        "id": "C",
+        "text": "$-1$"
+      }
+    ],
+    "correct": "B",
+    "explanation": "El seno y el coseno del mismo ángulo no alcanzan $-1$ simultáneamente. Para $a\\sin x + b\\cos x$, el rango es $[-\\sqrt{a^2+b^2}; \\sqrt{a^2+b^2}] = [-5; 5]$, así que el mínimo es $-5$."
+  },
+  {
+    "tag": "ARITMÉTICA • PORCENTAJES",
+    "question": "El precio de un libro sube $20\\%$ y luego sobre el nuevo precio le hacen un descuento del $20\\%$. Respecto al precio inicial, el precio final:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Queda igual"
+      },
+      {
+        "id": "B",
+        "text": "Disminuye en $4\\%$"
+      },
+      {
+        "id": "C",
+        "text": "Aumenta en $4\\%$"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Si el precio inicial es $100$, al subir $20\\%$ pasa a $120$. Luego descontamos $20\\%$ de $120$ (que es $24$), quedando $120 - 24 = 96$. Bajó en $4\\%$."
+  },
+  {
+    "tag": "GEOMETRÍA • TRIÁNGULOS",
+    "question": "En un triángulo isósceles dos de sus lados miden $4\\text{ cm}$ y $9\\text{ cm}$. ¿Cuál es su perímetro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$17\\text{ cm}$ o $22\\text{ cm}$"
+      },
+      {
+        "id": "B",
+        "text": "$22\\text{ cm}$"
+      },
+      {
+        "id": "C",
+        "text": "$17\\text{ cm}$"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Por existencia triangular, si los lados fueran $4, 4, 9$, no cumple $4 + 4 > 9$. El único triángulo válido tiene lados $9, 9, 4$, cuyo perímetro es $22\\text{ cm}$."
+  },
+  {
+    "tag": "QUÍMICA • ESTEQUIOMETRÍA",
+    "question": "Si haces reaccionar $4\\text{ g}$ de $\\text{H}_2$ con $16\\text{ g}$ de $\\text{O}_2$ para formar agua ($2\\text{H}_2 + \\text{O}_2 \\to 2\\text{H}_2\\text{O}$), ¿cuántos gramos de $\\text{H}_2\\text{O}$ se producen como máximo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$20\\text{ g}$"
+      },
+      {
+        "id": "B",
+        "text": "$18\\text{ g}$"
+      },
+      {
+        "id": "C",
+        "text": "$36\\text{ g}$"
+      }
+    ],
+    "correct": "B",
+    "explanation": "$4\\text{ g}$ de $\\text{H}_2$ son $2\\text{ mol}$, mientras que $16\\text{ g}$ de $\\text{O}_2$ son $0.5\\text{ mol}$. El reactivo limitante es el $\\text{O}_2$ ($0.5\\text{ mol}$), produciendo $1\\text{ mol}$ de $\\text{H}_2\\text{O} = 18\\text{ g}$ (sobran $2\\text{ g}$ de $\\text{H}_2$)."
+  },
+  {
+    "tag": "FÍSICA • ELECTROSTÁTICA",
+    "question": "Dos cargas puntuales se repelen con una fuerza $F$. Si duplicas ambas cargas y también duplicas la distancia entre ellas, la nueva fuerza será:",
+    "options": [
+      {
+        "id": "A",
+        "text": "$4F$"
+      },
+      {
+        "id": "B",
+        "text": "$F$"
+      },
+      {
+        "id": "C",
+        "text": "$F/2$"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Por la Ley de Coulomb, $F' = k\\frac{(2q_1)(2q_2)}{(2d)^2} = \\frac{4}{4} k\\frac{q_1 q_2}{d^2} = F$. El factor $4$ del numerador se cancela con $2^2 = 4$ del denominador."
+  }
+]

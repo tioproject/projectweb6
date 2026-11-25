@@ -1,0 +1,117 @@
+[
+  {
+    "id": "ERR01",
+    "tag": "PROBLEMA #01 • ÁLGEBRA / DESIGUALDADES",
+    "statement": "Un alumno intenta hallar el conjunto solución de: $$\\frac{x^2 - 4}{x - 2} > 0$$",
+    "lines": [
+      {
+        "num": 1,
+        "text": "Factorizamos el numerador por diferencia de cuadrados: $$\\frac{(x - 2)(x + 2)}{x - 2} > 0$$"
+      },
+      {
+        "num": 2,
+        "text": "Simplificamos el factor común $(x - 2)$ en numerador y denominador: $$x + 2 > 0$$"
+      },
+      {
+        "num": 3,
+        "text": "Despejamos $x$ y concluimos que el conjunto solución es: $$x \\in \\langle -2; +\\infty \\rangle$$"
+      }
+    ],
+    "errorLine": 2,
+    "successTitle": "✓ ¡Ojo crítico! Detectaste el error en la Línea 2.",
+    "successBody": "Al cancelar $(x - 2)$ sin restringir el dominio, se pierde la condición $x \\neq 2$. En $x = 2$ ocurre una división entre cero ($0/0$). El conjunto solución correcto es $\\langle -2; +\\infty \\rangle - \\{2\\}$.",
+    "hintBody": "Cuando cancelas un factor algebraico con variable en el denominador, ¿qué restricción debes garantizar antes de tacharlo?"
+  },
+  {
+    "id": "ERR02",
+    "tag": "PROBLEMA #02 • ÁLGEBRA / EXPONENTES Y RAÍCES",
+    "statement": "Un alumno demuestra paso a paso que $1 = -1$ de la siguiente manera:",
+    "lines": [
+      {
+        "num": 1,
+        "text": "Partimos de la igualdad verdadera: $$1 = \\sqrt{1} = \\sqrt{(-1)(-1)}$$"
+      },
+      {
+        "num": 2,
+        "text": "Aplicamos la propiedad de raíz de un producto: $$\\sqrt{(-1)(-1)} = \\sqrt{-1} \\cdot \\sqrt{-1}$$"
+      },
+      {
+        "num": 3,
+        "text": "Como $\\sqrt{-1} = i$ e $i^2 = -1$, concluimos que: $$1 = i \\cdot i = -1$$"
+      }
+    ],
+    "errorLine": 2,
+    "successTitle": "✓ ¡Exacto! El fallo está en la Línea 2.",
+    "successBody": "La identidad $\\sqrt{a \\cdot b} = \\sqrt{a}\\sqrt{b}$ solo es válida en los números reales cuando $a \\ge 0$ y $b \\ge 0$. Al aplicarla con radicandos negativos se rompe la rama principal de la raíz.",
+    "hintBody": "Revisa bajo qué condiciones del conjunto de los números reales se puede separar una raíz cuadrada de un producto."
+  },
+  {
+    "id": "ERR03",
+    "tag": "PROBLEMA #03 • FÍSICA / CINEMÁTICA VERTICAL",
+    "statement": "Se lanza una piedra verticalmente hacia arriba con rapidez $v_0 = 20\\text{ m/s}$ ($g = 10\\text{ m/s}^2$). Un alumno calcula el desplazamiento a los $t = 3\\text{ s}$:",
+    "lines": [
+      {
+        "num": 1,
+        "text": "Identificamos los datos vectoriales tomando el eje $+y$ hacia arriba: $v_0 = +20\\text{ m/s}$ y $a = -10\\text{ m/s}^2$."
+      },
+      {
+        "num": 2,
+        "text": "Usamos la ecuación escalar del MRUV acelerado: $$d = v_0 t + \\frac{1}{2} g t^2$$"
+      },
+      {
+        "num": 3,
+        "text": "Reemplazamos los valores numéricos: $$d = 20(3) + \\frac{1}{2}(10)(3)^2 = 105\\text{ m}$$"
+      }
+    ],
+    "errorLine": 2,
+    "successTitle": "✓ ¡Bien visto! La falla está en la Línea 2.",
+    "successBody": "En la Línea 1 definió correctamente $+y$ hacia arriba ($a = -10\\text{ m/s}^2$), pero en la Línea 2 escribió $+\\frac{1}{2}gt^2$ con signo positivo como si la gravedad acelerara hacia arriba. Debe ser $\\Delta y = v_0 t - \\frac{1}{2}gt^2 = 15\\text{ m}$.",
+    "hintBody": "Compara la convención de signos establecida en la Línea 1 con el signo usado en la fórmula de la Línea 2."
+  },
+  {
+    "id": "ERR04",
+    "tag": "PROBLEMA #04 • TRIGONOMETRÍA / ECUACIONES",
+    "statement": "Un alumno resuelve la ecuación trigonométrica $\\sin(2x) = \\sin(x)$ en el intervalo $x \\in [0; \\pi]$:",
+    "lines": [
+      {
+        "num": 1,
+        "text": "Aplicamos la identidad del ángulo doble en el primer miembro: $$2\\sin(x)\\cos(x) = \\sin(x)$$"
+      },
+      {
+        "num": 2,
+        "text": "Dividimos ambos miembros entre $\\sin(x)$ para simplificar: $$2\\cos(x) = 1 \\Rightarrow \\cos(x) = \\frac{1}{2}$$"
+      },
+      {
+        "num": 3,
+        "text": "Concluimos que la única solución en $[0; \\pi]$ es: $$x = \\frac{\\pi}{3}$$"
+      }
+    ],
+    "errorLine": 2,
+    "successTitle": "✓ ¡Excelente! El error está en la Línea 2.",
+    "successBody": "Al dividir entre $\\sin(x)$ se eliminan las soluciones donde $\\sin(x) = 0$ (es decir, $x = 0$ y $x = \\pi$). Siempre se debe factorizar: $\\sin(x)(2\\cos x - 1) = 0$.",
+    "hintBody": "¿Qué ocurre cuando divides ambos lados de una ecuación por una expresión que puede valer cero?"
+  },
+  {
+    "id": "ERR05",
+    "tag": "PROBLEMA #05 • ÁLGEBRA / LOGARITMOS",
+    "statement": "Un estudiante resuelve la ecuación $\\log_2(x - 1) + \\log_2(x + 1) = 3$:",
+    "lines": [
+      {
+        "num": 1,
+        "text": "Aplicamos la propiedad de suma de logaritmos: $$\\log_2[(x - 1)(x + 1)] = 3$$"
+      },
+      {
+        "num": 2,
+        "text": "Pasamos a forma exponencial: $$(x - 1)(x + 1) = 2^3 \\Rightarrow x^2 - 1 = 8 \\Rightarrow x^2 = 9$$"
+      },
+      {
+        "num": 3,
+        "text": "Extraemos raíz cuadrada y afirmamos que el conjunto solución es: $$\\text{CS} = \\{-3; 3\\}$$"
+      }
+    ],
+    "errorLine": 3,
+    "successTitle": "✓ ¡Cazado! El error está en la Línea 3.",
+    "successBody": "Antes de resolver, el Conjunto de Valores Admisibles (CVA) exige $x - 1 > 0$ y $x + 1 > 0 \\Rightarrow x > 1$. Por tanto, $x = -3$ no pertenece al dominio del logaritmo original; la única solución es $x = 3$.",
+    "hintBody": "Verifica si ambas raíces obtenidas en la Línea 3 existen dentro de los logaritmos de la ecuación inicial."
+  }
+]
